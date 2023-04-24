@@ -9,81 +9,54 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play pr.</tw-noscript></noscript></tw-story>
-<tw-storydata name="pr" startnode="53" creator="Twine" creator-version="2.6.2" format="Harlowe" format-version="3.3.5" ifid="02AFAC68-85B2-4521-8CE1-32A652673DA7" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://cdn.jsdelivr.net/gh/ChapelR/custom-harlowe-stylesheet/harlowe-3.3.0.css');
-
-/* Set the default font size for the story */
-.tw-passage {
-  font-size: 16px;
+<tw-storydata name="pr" startnode="53" creator="Twine" creator-version="2.6.2" format="Harlowe" format-version="3.3.5" ifid="02AFAC68-85B2-4521-8CE1-32A652673DA7" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Remove undo buttons */
+.twine-story .undo {
+  display: none;
 }
 
-/* Set the font size to 18px for desktop devices with a screen width of 768px or larger */
-@media only screen and (min-width: 768px) {
-  .tw-passage {
-    font-size: 18px;
-  }
-}
-
-/* Set the font size to 16px for mobile devices with a screen width of 767px or smaller */
-@media only screen and (max-width: 767px) {
-  .tw-passage {
-    font-size: 16px;
-  }
-}
-
-/* Change the background color of the page */
-body {
-  background-color: #f0f0f0;
-}
-
-/* Change the font family of the entire story */
-body {
-  font-family: Arial, sans-serif;
-}
-
-/* Change the font color of the story text */
-.tw-story {
+/* Change font */
+.twine-story {
+  font-family: 'Press Start 2P', cursive;
   color: #333;
 }
 
-/* Add a border around the story */
-.tw-story {
-  border: 1px solid #ccc;
+/* Pokemon/Pokeball color palette */
+.twine-story {
+  --poke-red: #ff1a1a;
+  --poke-white: #f2f2f2;
+  --poke-black: #1a1a1a;
+  --poke-yellow: #ffcb05;
+  --poke-blue: #0d6efd;
+  --poke-green: #4caf50;
 }
 
-/* Change the color of the story link text */
-.tw-link {
-  color: blue;
+/* Aesthetically interesting */
+.twine-story {
+  background-color: var(--poke-white);
 }
 
-/* Add a background color to the story link when hovering over it */
-.tw-link:hover {
-  background-color: #f0f0f0;
+/* Change link colors */
+.twine-story a {
+  color: var(--poke-blue);
+  text-decoration: none;
 }
 
-/* Center the story title */
-.tw-passage-title {
-  text-align: center;
+.twine-story a:hover {
+  color: var(--poke-yellow);
+  text-decoration: underline;
 }
 
-/* Add a background color and border to passages */
-.tw-passage {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 10px;
-  max-font-size: 18px;
-}
-
-/* Add a border to images */
-img {
-  border: 1px solid #ccc;
-}
-
-/* Make images fill their containers */
-img {
-  max-width: 100%;
-  height: auto;
-}
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="CABIN" tags="" position="500,150" size="100,100">
+/* Mobile friendly */
+@media only screen and (max-width: 600px) {
+  .twine-story {
+    font-size: 16px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.5em;
+  }
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="CABIN" tags="" position="500,150" size="100,100">
 Finally, you thought to yourself as you pushed open the cabin door, a sense of relief washing over you. And well-earned, after four long years of continued education, unpaid internships, and exhausting field research. Your new employer, Professor Samson Maple, had overseen your dissertation – a meticulous, detailed analysis of Pokémon reproductive behavior – and approached you after graduation to give you a job he assured would be perfect.
 
 The opportunity? Three months alone in Verdantia – an isolated region teeming with all sorts of Pokémon and entirely devoid of human civilization, save for a small ranger’s outpost in the center. While the prospect of three months of seclusion with only Pokémon as companions may send shivers down the spines of some, you couldn’t wait to dive in and continue your research.
@@ -107,9 +80,9 @@ Not that it mattered – you couldn’t imagine spending your free time here try
 You walk over to the bed and take a seat. It&#39;s surprisingly comfortable.
 
 [[Grab the Ranger&#39;s Guidebook | GrabBook ]]
-[[Go Back into The Foyer. | CABIN2]]</tw-passagedata><tw-passagedata pid="6" name="BedroomLook2" tags="" position="1375,525" size="100,100">The sleeping quarters are furnished with a bed, a small desk, and several bookshelves lining the wall. The texts present on the shelf primarily concerned Pokémon biology and behavior. 
+[[Go back to the cabin | CABIN2]]</tw-passagedata><tw-passagedata pid="6" name="BedroomLook2" tags="" position="1375,525" size="100,100">The sleeping quarters are furnished with a bed, a small desk, and several bookshelves lining the wall. The texts present on the shelf primarily concerned Pokémon biology and behavior. 
 
-[[Go Back into The Foyer. | CABIN2]]</tw-passagedata><tw-passagedata pid="7" name=" WindowLook" tags="" position="700,600" size="100,100">As you look out of the window of your cabin, you see a sprawling forest stretching out as far as the eye can see. The trees tower high above the ground, their branches reaching out towards the sky like fingers. The leaves rustle gently in the wind, creating a soothing, whispering sound that fills the air.
+[[Go back to the cabin | CABIN2]]</tw-passagedata><tw-passagedata pid="7" name=" WindowLook" tags="" position="700,600" size="100,100">As you look out of the window of your cabin, you see a sprawling forest stretching out as far as the eye can see. The trees tower high above the ground, their branches reaching out towards the sky like fingers. The leaves rustle gently in the wind, creating a soothing, whispering sound that fills the air.
 
 In the distance, you can see the glimmering surface of a river, its waters sparkling in the sunlight. The river winds its way through the forest like a shimmering ribbon, disappearing into the distance as it flows towards the horizon. You can hear the soft murmur of the water, carried on the gentle breeze that wafts through the window.
 
@@ -135,11 +108,11 @@ As you consider the research possibilities, you feel a sense of excitement and a
 
 [[ Examine the Wild Pokemon | PokemonExamine ]]
 
-[[ Head Deeper Into The Woods. | ScaryScene]]</tw-passagedata><tw-passagedata pid="13" name=" ScaryScene" tags="" position="900,1150" size="100,100">Farther into the woods, the trees grew taller and thicker, their branches intertwining to form a canopy above you. The sudden darkness, while jarring, wasn’t much of a roadblock with the incendiary mane of your companion lighting the way. And so, you continued forward close behind Brutus, listening to the crunching of leaves underfoot. As you walked, you couldn’t help but feel a sense of unease creep up on you. The air around you seemed heavy, and you couldn’t help but think that something was just… off. 
+[[ Into the Forest Thicket | ScaryScene]]</tw-passagedata><tw-passagedata pid="13" name=" ScaryScene" tags="" position="900,1150" size="100,100">Farther into the woods, the trees grew taller and thicker, their branches intertwining to form a canopy above you. The sudden darkness, while jarring, wasn’t much of a roadblock with the incendiary mane of your companion lighting the way. And so, you continued forward close behind Brutus, listening to the crunching of leaves underfoot. As you walked, you couldn’t help but feel a sense of unease creep up on you. The air around you seemed heavy, and you couldn’t help but think that something was just… off. 
 
 [[ Try To Pinpoint the Source of Your Anxiety | LookAround ]]</tw-passagedata><tw-passagedata pid="14" name=" PokemonExamine " tags="" position="725,975" size="100,100">Some you recognized – a flock of Pidgey overhead, a family of Rattata scurrying across your path – and others, like Gossifluer and Floragato – that you needed to refer to your Pokedex to identify. 
 
-[[ Head Deeper Into The Woods. | ScaryScene]]</tw-passagedata><tw-passagedata pid="15" name=" LookAround " tags="" position="900,1300" size="100,100">You glanced around to try to pinpoint the source of this sudden discomfort but found nothing out of the ordinary. 
+[[ Into the Forest Thicket | ScaryScene]]</tw-passagedata><tw-passagedata pid="15" name=" LookAround " tags="" position="900,1300" size="100,100">You glanced around to try to pinpoint the source of this sudden discomfort but found nothing out of the ordinary. 
 
 [[ Look Back Towards Brutus | BrutusScare ]]</tw-passagedata><tw-passagedata pid="16" name=" BrutusScare " tags="" position="900,1450" size="100,100">But... Brutus was gone. 
 
@@ -154,7 +127,7 @@ Your words trailed off as you caught sight of your companion’s stature – Bru
 
 [[ Follow Brutus&#39; Gaze | HypnoStart ]]</tw-passagedata><tw-passagedata pid="19" name=" Nope " tags="" position="1125,1700" size="100,100">No matter how much you want to turn on your heel and leave, your legs wont move - no doubt, whatever is affecting Brutus is also affecting you. 
 
-[[ Follow Brutus&#39; Gaze | HypnoStart ]]</tw-passagedata><tw-passagedata pid="20" name=" HypnoStart " tags="" position="925,1900" size="100,100">You hesitantly followed his gaze, half-hoping to see something innocuous; maybe a passing Pidgey or some rustling leaves. Instead, your gaze fell upon a Hypno. 
+[[ Follow Brutus&#39; Gaze | HypnoStart ]]</tw-passagedata><tw-passagedata pid="20" name=" HypnoStart " tags="" position="900,1900" size="100,100">You hesitantly followed his gaze, half-hoping to see something innocuous; maybe a passing Pidgey or some rustling leaves. Instead, your gaze fell upon a Hypno. 
 
 It was large and imposing (much more so than the specimens that you’d seen back home in Kanto, at least) and it had its half-lidded gaze fixed on Brutus, crooning out calls of its name as it swung its pendulum lazily in front of it. 
 
@@ -189,9 +162,7 @@ Your brain felt like it’s been turned inside out; you can’t remember who you
 
 And yet, despite how it made your nose wrinkle, it was intoxicating.
 
-//[[ MORE  -&gt; SuckCock2 ]]//
-//[[ MORE  -&gt; SuckCock2 ]]//
-//[[ MORE  -&gt; SuckCock2 ]]//
+//[[ More. -&gt; SuckCock2 ]]//
 </tw-passagedata><tw-passagedata pid="29" name=" SuckCock2 " tags="" position="1000,2950" size="100,100">Your mouth watered as you worked your mouth over the tip of the Hypno’s length, the creature above you crooning its own name in what you could only assume was approval. Your gaze still following the pendulum, a gloved hand came up to cup the Pokémon’s balls, hefting them in your palm before squeezing softly. 
 
 //[[ So full... -&gt; SuckCock3 ]]//
@@ -218,7 +189,7 @@ The dull ache in your head only seemed to amplify the thoughts that flooded your
 The claws on his forepaws made quick work of your uniform pants, leaving you bare below the waist. The heat of his mane, now burning with desire, made you squirm underneath him. But despite this, and perhaps due to the thrall, you found the feeling of his weight on you - his powerful chest against your back, pressing you to the ground - deeply comforting. 
 
 //[[ SUCH A STRONG BREEDING STUD... -&gt; BrutusBreed1 ]]//
-[[ Brutus always works so hard, he deserves this... -&gt; BrutusBreed2 ]]</tw-passagedata><tw-passagedata pid="35" name=" BrutusBreed1 " tags="" position="875,3775" size="100,100">You couldn’t – or didn’t want to – push away the thought, the idea of being reduced to a breeding sow for the partner Pokémon you’d known for so long. It was degrading, humiliating, and enthralling all at once.
+[[ Brutus working so hard, he deserves this... -&gt; BrutusBreed2 ]]</tw-passagedata><tw-passagedata pid="35" name=" BrutusBreed1 " tags="" position="875,3775" size="100,100">You couldn’t – or didn’t want to – push away the thought, the idea of being reduced to a breeding sow for the partner Pokémon you’d known for so long. It was degrading, humiliating, and enthralling all at once.
 
 Those thoughts slipped through your mind like smoke, quickly dissipating as you felt Brutus’ cock tease against your slit. Despite the cloudiness in his mind, he was trying his best to be gentle as he pushed his way into you. Nonetheless, it hurt. Enough to bring tears to your eyes… but any sound you could make indicative of such was muffled once more by the cock of the psychic-type Pokémon in front of you, and replaced with thoughts of desperation, of cum, of heat. How much you wanted, no - needed - to be reduced to a Pokémon broodbitch. 
 //
